@@ -161,7 +161,6 @@ contract ERC20WKND is IERC20 {
                     _winning_candidates.length > 0 &&
                     _winning_candidates[d].voted > 0
                 ) {
-                    //emit print("_winning_candidates",_winning_candidates,_winning_candidates[d],_winning_candidates.length, d);
                     winning_candidates[d] = Candidate({
                         voted: _winning_candidates[d].voted,
                         addr: _winning_candidates[d].addr
@@ -172,15 +171,6 @@ contract ERC20WKND is IERC20 {
         return _winning_candidates;
     }
 
-    // function getVoteTotal() public view returns (Candidate[] memory){
-    //     Candidate[] memory totalCandidates = new Candidate[](3);
-    //     for (uint8 i; i<candidates.length; i++){
-    //         totalCandidates[i] = (Candidate({addr:candidates[i], voted:balanceOf(candidates[i])}));
-    //     }
-    //     return totalCandidates;
-    // }
-
-    //erc20
     function totalSupply() public view override returns (uint256) {
         return totalSupply_;
     }

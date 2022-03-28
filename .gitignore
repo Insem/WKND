@@ -1,4 +1,5 @@
 /node_modules/
 /artifacts/
+/sol/artifacts/
 /.debugger/
 *.txt
