@@ -1,0 +1,17 @@
+{
+  "name": "wakanda_election",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "600amper@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "solc": "^0.8.13",
+    "web3": "^1.7.1",
+    "web3-eth-contract": "^1.7.1"
+  }
+}
